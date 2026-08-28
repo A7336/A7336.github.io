@@ -1,0 +1,25 @@
+<div id="contactModal" class="modal-overlay">
+  <div class="modal-content">
+    <button id="closeContactBtn" class="modal-close">&times;</button>
+    <h2>Contact Me</h2>
+    <!-- Update the action URL to your actual email address -->
+    <form id="contactForm" action="https://formsubmit.co/ajax/adsa.das69@hotmail.com" method="POST" class="contact-form">
+  <input type="hidden" name="_subject" value="New Portfolio Contact Message!">
+  <input type="hidden" name="_captcha" value="false">
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required placeholder="Your Name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required placeholder="your.email@example.com">
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="4" required placeholder="Your message..."></textarea>
+  </div>
+  <button type="submit" id="submitBtn" class="submit-btn">Send Message</button>
+</form>
+  </div>
+</div>

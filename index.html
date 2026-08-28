@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bento Portfolio — Dark Engineering Edition</title>
+  
+	<!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Simple Icons (for Jetbrains) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v13/font/simple-icons.min.css">
+	<!-- Devicon (for Eclipse) -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+	<!-- Main External Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<!-- Main JavaScript File -->
+  <script type="module" src="js/main.js"></script>
+	
+	
+	
+	
+  <div class="fullscreen-wrapper">
+    <!-- Top Title Bar -->
+    <header class="card card-title-bar">
+      <h1>
+        <span class="title-first">Adam</span>
+        <span class="title-last">BEN</span>
+      </h1>
+	  <h2> A Computer Science student who genuinely enjoys the stuff most people avoid.</h2>
+    </header>
+
+
+
+
+
+    <!-- Main Section: Timeline + Bento Grid -->
+    <div class="content-wrapper">
+
+      <!-- Left Vertical Timeline Rail -->
+      <aside class="timeline-rail">
+        
+		<div class="tl-node active">
+          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <span class="tl-year">2024 - NOW — Metz, France</span>
+            <h4 class="tl-title">Univ. de Lorraine</h4>
+            <p class="tl-desc">BSc in CS; Learning the basics from frontend to backend, RGB to AI.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Python</span>
+              <span class="tl-tag">Java</span>
+              <span class="tl-tag">C</span>
+            </div>
+          </div>
+        </div>
+		
+        <div class="tl-node">
+          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <span class="tl-year">2025 — Sittingbourne</span>
+            <h4 class="tl-title">Warehouse Operative</h4>
+            <p class="tl-desc">Loading & Unloading pallets for big logistical chains.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Warehouse</span>
+              <span class="tl-tag">Logistics</span>
+              <span class="tl-tag">Teamwork</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-node">
+          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+          <div class="tl-card">
+            <span class="tl-year">2022 — Gravesend</span>
+            <h4 class="tl-title">Server</h4>
+            <p class="tl-desc">Learned the ropes of real work, in a team.</p>
+            <div class="tl-tags">
+              <span class="tl-tag">Teamwork</span>
+              <span class="tl-tag">Management</span>
+              <span class="tl-tag">CS (Customer Service)</span>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+
+      <!-- Main Bento Grid -->
+      <main class="main-grid">
+
+        <!-- 1. Hero Card -->
+        <article class="card card-hero">
+          <div class="hero-job-title">
+			<h2>I'm a <span class="typing-text" id="typewriter"></span><span class="typing-cursor">|</span></h2>
+		  </div>
+          
+		  <div class="hero-about-me">
+            <p>
+				Long before I was writing custom memory allocators in C or designing Alpha-Beta pruning algorithms, 
+				I was learning real-world efficiency on the warehouse floor and in fast-paced service roles. 
+				That practical grind taught me a simple rule: 
+				understand the system properly, 
+				pay attention to the tiny details, 
+				and build things to last.
+			</p>
+            
+			<p>
+				I build high-performance software from the ground up, 
+				ranging from custom low-level algorithmic engines in C to distributed game AI system architectures in Java. 
+				Combining rigorous computer science fundamentals with a relentless work ethic, 
+				I specialize in algorithmic optimization, 
+				symbolic AI, and writing fast, 
+				reliable code.
+			</p>
+          </div>
+        </article>
+
+        <!-- 2. Portrait Card -->
+        <article class="card card-portrait">
+          <div style="text-align: center;">
+            <div style="width: 110px; height: 110px; border-radius: 50%; background: #1f293d; display: flex; align-items: center; justify-content: center; margin: 0 auto; border: 2px solid var(--accent-cyan);">
+              <i class="fa-solid fa-user-gear" style="font-size: 3rem; color: var(--accent-cyan);"></i>
+            </div>
+          </div>
+        </article>
+
+
+
+
+
+
+        <!-- 3. Bio & Specialty Card -->
+	<article class="card card-bio">
+          <div class="bio-specialties">
+            
+            <!-- Pillar 1: Low-Level & Optimization -->
+            <div class="specialty-tile">
+              <div class="specialty-header">
+                <i class="fa-solid fa-gauge-high"></i> Systems & Performance
+              </div>
+              <span class="html-tag">&lt;h3&gt;</span>
+              <div class="specialty-body">Low-level memory management, dynamic data structures, & algorithm optimization.</div>
+              <span class="html-tag">&lt;/h3&gt;</span>
+            </div>
+
+            <!-- Pillar 2: AI & Decision Making -->
+            <div class="specialty-tile">
+              <div class="specialty-header">
+                <i class="fa-solid fa-brain"></i> Symbolic AI & Heuristics
+              </div>
+              <span class="html-tag">&lt;h3&gt;</span>
+              <div class="specialty-body">Game theory engines, MCTS, Minimax, & metaheuristic optimization algorithms.</div>
+              <span class="html-tag">&lt;/h3&gt;</span>
+            </div>
+
+            <!-- Pillar 3: Distributed Systems -->
+            <div class="specialty-tile">
+              <div class="specialty-header">
+                <i class="fa-solid fa-network-wired"></i> Distributed Systems
+              </div>
+              <span class="html-tag">&lt;h3&gt;</span>
+              <div class="specialty-body">Real-time socket architecture, secure communication protocols, & database design.</div>
+              <span class="html-tag">&lt;/h3&gt;</span>
+            </div>
+
+          </div>
+       
+
+
+
+		<!-- Interactive Stack Filters -->
+		<div class="bio-stack">
+		  <div class="bio-stack-header">
+			<span class="stack-label">Tech Stack & Concepts</span>
+			<div class="stack-filters">
+		  <button id="btn-all" class="sf-btn active">All</button>
+		  <button id="btn-lang" class="sf-btn">Languages</button>
+		  <button id="btn-fw" class="sf-btn">Frameworks</button>
+		  <button id="btn-algo" class="sf-btn">AI & Algorithms</button>
+		  <button id="btn-tools" class="sf-btn">Tools & Testing</button>
+		</div>
+		  </div>
+
+		  <div class="bio-tags" id="tag-container">
+			<!-- Languages -->
+			<span class="stag" data-cat="lang"><i class="fa-brands fa-python"></i> Python</span>
+			<span class="stag" data-cat="lang"><i class="fa-solid fa-c"></i> C</span>
+			<span class="stag" data-cat="lang"><i class="fa-brands fa-java"></i> Java</span>
+			<span class="stag" data-cat="lang"><i class="devicon-sqldeveloper-plain"></i> SQL</span>
+			<span class="stag" data-cat="lang"><i class="devicon-html5-plain"></i> HTML5</span>
+			<span class="stag" data-cat="lang"><i class="devicon-css3-plain"></i> CSS3</span>
+			<span class="stag" data-cat="lang"><i class="devicon-php-plain"></i> PHP</span>
+
+			<!-- Frameworks -->
+			<span class="stag" data-cat="fw"><i class="devicon-java-plain"></i> JavaFX / FXML</span>
+			<span class="stag" data-cat="fw"><i class="devicon-jquery-plain"></i> jQuery</span>
+
+			<!-- AI & Algorithms -->
+			<span class="stag" data-cat="algo"><i class="fa-solid fa-brain"></i> Game Theory & Minimax</span>
+			<span class="stag" data-cat="algo"><i class="fa-solid fa-diagram-project"></i> MCTS</span>
+			<span class="stag" data-cat="algo"><i class="fa-solid fa-dna"></i> Metaheuristics (Genetic/Annealing)</span>
+			<span class="stag" data-cat="algo"><i class="fa-solid fa-draw-polygon"></i> Computational Geometry</span>
+
+			<!-- Tools & Testing -->
+			<span class="stag" data-cat="tools"><i class="fa-brands fa-git-alt"></i> Git</span>
+			<span class="stag" data-cat="tools"><i class="fa-brands fa-docker"></i> Docker</span>
+			<span class="stag" data-cat="tools"><i class="devicon-junit-plain"></i> JUnit</span>
+			<span class="stag" data-cat="tools"><i class="devicon-mysql-plain"></i> MySQL</span>
+			<span class="stag" data-cat="tools"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+			<span class="stag" data-cat="tools"><i class="si si-jetbrains"></i> JetBrains IDEs</span>
+			<span class="stag" data-cat="tools"><i class="devicon-eclipse-plain"></i> Eclipse</span>
+		 </div>
+		</div>
+	</article>
+
+
+
+
+        <!-- 4. Project Showcase Card -->
+    <article class="card card-project-feature">
+        <div class="project-header">
+			<span>Featured Highlights</span>
+        </div>
+        <div class="project-cards"></div>
+    </article>
+
+
+
+
+        <!-- 5. Facts Counter Card -->
+    <article class="card card-facts">
+          <div>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Key Numbers</span>
+            <div class="facts-number" id="factNum">2+</div>
+            <div class="facts-text" id="factDesc">Years of coding experience building full-stack web applications.</div>
+          </div>
+		  <div class="facts-nav">
+			<button id="prevFactBtn" class="facts-nav-btn"><i class="fa-solid fa-chevron-left"></i></button>
+			<button id="nextFactBtn" class="facts-nav-btn"><i class="fa-solid fa-chevron-right"></i></button>
+		  </div>
+    </article>
+
+
+
+
+        <!-- 6. Contact Action Banner -->
+    <article id="openContactCard" class="card card-contact" style="cursor: pointer;">
+          <div class="contact-header">
+            <span>Have questions?</span>
+            <i class="fa-solid fa-arrow-right" style="transform: rotate(-45deg);"></i>
+          </div>
+          <div class="contact-footer">
+            <h2>Contact <em>me</em></h2>
+          </div>
+    </article>
+
+
+
+        <!-- 7. Social Links Card -->
+    <article class="card card-social">
+        <div class="social-links">
+           <a href="https://linkedin.com/in/adamb7336" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+           <a href="https://github.com/A7336" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+           <a href="mailto:adsa.das69@hotmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>   
+		   <!-- CV Under Production.
+		   <a href="CV_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Download CV in English">
+			<img src="assets/icons/pdf-en.png" alt="" width="24" height="24" style="filter: brightness(0) invert(1);" />
+		   </a>
+		   -->
+		   <a href="assets/docs/CVFR.pdf" target="_blank" rel="noopener noreferrer" aria-label="Télécharger le CV en Français">
+			<img src="assets/icons/pdf-fr.png" alt="" width="24" height="24" style="filter: brightness(0) invert(1);" />
+		   </a>
+        </div>
+    </article>
+
+
+
+   </main>
+   </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+.timeline-rail {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timeline-rail::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+  width: 2px;
+  background: var(--card-border);
+  z-index: 1;
+}
+
+.tl-node {
+  position: relative;
+  padding-left: 2rem;
+  z-index: 2;
+}
+
+.tl-dot-wrap {
+  position: absolute;
+  left: 0.25rem;
+  top: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+  border: 2px solid var(--bg-main);
+}
+
+.tl-node.active .tl-dot {
+  background: var(--accent-green);
+  box-shadow: 0 0 10px var(--accent-green);
+}
+
+.tl-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+}
+
+.tl-year {
+  font-size: 0.75rem;
+  color: var(--accent-blue);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tl-title {
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+  color: var(--text-main);
+}
+
+.tl-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.tl-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.tl-tag {
+  font-size: 0.68rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  color: var(--text-muted);
+}

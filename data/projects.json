@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "title": "Real-Time London Underground Monitoring Platform",
+    "category": "Web Application",
+    "categoryColor": "var(--accent-cyan)",
+    "summary": "Full-stack monitoring platform leveraging background asynchronous polling, differential WebSockets, and spatial-temporal database optimizations for real-time TfL transit tracking.",
+    "image": "assets/tfl-tracker.png",
+    "highlights": [
+      "Built a FastAPI background worker (httpx + asyncio) to continuously ingest live Transport for London (TfL) REST API feeds.",
+      "Engineered a dynamic WebSocket system that performs differential state updates to minimize network bandwidth usage.",
+      "Optimized historical delay querying in PostgreSQL 15 & SQLAlchemy 2.0 (asyncpg) utilizing DISTINCT ON indexing strategies.",
+      "Developed an interactive Streamlit & Pandas analytics dashboard displaying operational statuses and live disruption metrics."
+    ],
+    "tags": ["Python", "FastAPI", "WebSockets", "PostgreSQL", "SQLAlchemy", "Streamlit", "Docker"],
+    "github": "https://github.com/A7336/TfL-Tracker"
+  },
+  {
+    "id": 1,
+    "title": "Breakthrough Game AI Engine",
+    "category": "GOFAI / AI",
+    "categoryColor": "#f87171",
+    "summary": "Symbolic Artificial Intelligence engine for Breakthrough incorporating Minimax with Alpha-Beta Pruning, Monte Carlo Tree Search (MCTS), and metaheuristic optimization.",
+    "image": null,
+    "highlights": [
+      "Engineered a Java-based chess-variant core engine for rules validation, board state management, and move evaluation.",
+      "Optimized decision tree traversal with Alpha-Beta Pruning, dynamic search depth tuning, and flexible heuristic interfaces.",
+      "Built Genetic Algorithm (tournament selection) and Simulated Annealing stochastic algorithms to auto-calibrate heuristic weights.",
+      "Implemented Monte Carlo Tree Search (MCTS) to evaluate optimal move trajectories via statistical playouts."
+    ],
+    "tags": ["Java", "AI", "Game Theory", "Minimax", "MCTS", "Genetic Algorithms"],
+    "github": "https://github.com/A7336/Breakthrough-Game-AI"
+  },
+  {
+    "id": 2,
+    "title": "Multiplayer Clue (Cluedo) Game",
+    "category": "Game Architecture",
+    "categoryColor": "var(--accent-purple)",
+    "summary": "Distributed multiplayer adaptation of Cluedo featuring real-time socket communications, encrypted state transmission, and a JavaFX dynamic UI.",
+    "image": "assets/cluedo.png",
+    "highlights": [
+      "Designed a distributed Java backend utilizing client-server sockets for real-time multiplayer session state sync.",
+      "Built a custom client-server encryption protocol to secure secret card data transfers across the network.",
+      "Created a JavaFX, FXML, and CSS graphical user interface integrated with a persistent SQL database.",
+      "Implemented an XML-driven feature-flipping system to dynamically toggling runtime features without application redeployment."
+    ],
+    "tags": ["Java", "JavaFX", "Sockets", "SQL", "JUnit", "XML"],
+    "github": "https://github.com/A7336/Cluedo-Game"
+  },
+  {
+    "id": 3,
+    "title": "Convex Hull Geometric Engine",
+    "category": "Algorithms",
+    "categoryColor": "#fbbf24",
+    "summary": "Low-level C 2D geometric engine implementing baseline computational geometry algorithms, benchmarking tools, and custom self-balancing data structures.",
+    "image": null,
+    "highlights": [
+      "Implemented 2D Convex Hull algorithms completely from scratch in C: Jarvis March O(nh), Graham Scan O(n log n), and QuickHull O(n log n).",
+      "Designed dynamic runtime algorithm selectors alongside performance benchmarking suites.",
+      "Built custom self-balancing search trees (AVL/Red-Black balance patterns) and dual Heap implementations (tree-based and array-based).",
+      "Optimized pre-sorting phases by engineering custom Heapsort and exchange sort routines directly over complex pointer structures."
+    ],
+    "tags": ["C", "Algorithms", "Computational Geometry", "Data Structures", "Benchmarking"],
+    "github": "https://github.com/A7336/Convex-Hull-C"
+  },
+  {
+    "id": 4,
+    "title": "Systems Programming & Engineering Suite",
+    "category": "Systems / C",
+    "categoryColor": "#34d399",
+    "summary": "A collection of software engineering projects targeting low-level memory allocation, 3D ray tracing math, simulation heuristics, and CLI applications.",
+    "image": "assets/saturn.jpg",
+    "highlights": [
+      "Ray Tracing Engine (Saturn): Implemented 3D vector computations and mathematical ray-object intersection modeling to render scenes.",
+      "Population Dynamics Simulator: Built a population genetics simulation engine utilizing custom heuristic algorithms.",
+      "Graph Theory & Memory Management: Executed graph traversal algorithms under strict dynamic memory constraints (malloc/calloc/free) ensuring zero leaks.",
+      "Terminal Game Engine: Structured state machines and business logic for a CLI-based Yahtzee (Yams) game."
+    ],
+    "tags": ["C", "Memory Management", "Ray Tracing", "Graph Theory", "CLI"],
+    "github": "https://github.com/A7336/General-C-Projects"
+  }
+]

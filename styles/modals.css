@@ -1,0 +1,206 @@
+/* Contact Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(8, 9, 10, 0.85);
+  backdrop-filter: var(--glass-blur);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+  z-index: 1000;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border-hover);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  box-shadow: var(--shadow-card);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: var(--text-main);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.form-group input,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  color: var(--text-main);
+  font-family: inherit;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent-blue);
+}
+
+.submit-btn {
+  background: var(--accent-blue);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity var(--transition-fast);
+  margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* Project Modal Specific Styles */
+.project-modal-content {
+  max-width: 1100px;
+  width: 92%;
+  height: 60vh;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+}
+
+.project-modal-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.project-list-sidebar {
+  width: 30%;
+  border-right: 1px solid var(--card-border);
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.project-list-item {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--card-border);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.project-list-item:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.project-list-item.active {
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 3px solid var(--accent-blue);
+}
+
+.project-list-item h4 {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.project-list-item span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.project-detail-view {
+  width: 70%;
+  padding: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.project-detail-header h3 {
+  font-size: 1.5rem;
+  color: var(--text-main);
+}
+
+.project-detail-category {
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.project-detail-desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.project-detail-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.project-detail-image-wrap {
+  width: 100%;
+  max-height: 420px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--card-border);
+  background: rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.project-detail-image-wrap img {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  display: block;
+}

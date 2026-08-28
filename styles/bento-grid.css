@@ -1,0 +1,317 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+/* Bento Card Common Styles */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  border-color: var(--card-border-hover);
+  transform: translateY(-2px);
+}
+
+/* Hero Card */
+.card-hero {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-job-title h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.typing-text { 
+  color: var(--accent-cyan); 
+}
+
+.typing-cursor { 
+  color: var(--accent-cyan);
+  font-weight: 300;
+  animation: blink 0.8s infinite; 
+}
+
+@keyframes blink { 
+  0%, 100% { opacity: 1; } 
+  50% { opacity: 0; } 
+}
+
+.hero-about-me p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+/* Portrait Card */
+.card-portrait {
+  grid-column: span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1e2638 0%, var(--bg-card) 100%);
+}
+
+.portrait-image {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid var(--card-border);
+  filter: grayscale(20%);
+}
+
+/* Bio & Tech Stack Card */
+.card-bio {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.bio-specialties {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.specialty-tile {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem;
+}
+
+.specialty-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 0.35rem;
+}
+
+.specialty-body {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.html-tag {
+  font-size: 0.65rem;
+  color: #4b5563;
+  font-family: monospace;
+}
+
+/* Filterable Tech Stack */
+.bio-stack-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.stack-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.stack-filters {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.sf-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+  color: var(--text-muted);
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.sf-btn.active, .sf-btn:hover {
+  background: var(--accent-blue);
+  color: #fff;
+  border-color: var(--accent-blue);
+}
+
+.bio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  color: var(--text-main);
+}
+
+/* Projects Feature Card */
+.card-project-feature {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-header span {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  flex: 1;
+}
+
+.project-mini-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  flex: 1 1 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-mini-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.project-mini-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* Facts Interactive Card */
+.card-facts {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.facts-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+  line-height: 1;
+  margin: 0.5rem 0;
+}
+
+.facts-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.facts-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.facts-nav-btn {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.facts-nav-btn:hover { 
+  background: var(--accent-blue); 
+}
+
+/* Contact Banner Card */
+.card-contact {
+  grid-column: span 1;
+  background: var(--bg-card);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--accent-cyan);
+  font-size: 0.85rem;
+}
+
+.contact-footer h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.contact-footer em {
+  color: var(--accent-blue);
+  font-style: normal;
+}
+
+/* Social Links Card */
+.card-social {
+  grid-column: span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.social-links a {
+  color: var(--text-muted);
+  font-size: 1.35rem;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.social-links a:hover {
+  color: var(--accent-cyan);
+  transform: translateY(-2px);
+}

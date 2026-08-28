@@ -1,0 +1,43 @@
+@media (max-width: 992px) {
+  .content-wrapper { 
+    grid-template-columns: 1fr; 
+  }
+  .timeline-rail { 
+    display: none; 
+  }
+  .main-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+  .card-hero, .card-bio { 
+    grid-column: span 2; 
+  }
+}
+
+@media (max-width: 640px) {
+  .main-grid { 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .card-hero, 
+  .card-portrait, 
+  .card-bio, 
+  .card-project-feature, 
+  .card-facts, 
+  .card-contact, 
+  .card-social {
+    grid-column: span 1;
+  }
+  .bio-specialties { 
+    grid-template-columns: 1fr; 
+  }
+  .project-modal-body {
+    flex-direction: column;
+  }
+  .project-list-sidebar, 
+  .project-detail-view {
+    width: 100%;
+  }
+  .project-list-sidebar {
+    height: 40%;
+  }
+}
